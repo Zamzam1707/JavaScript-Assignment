@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grades of student</title>
+    <style>
+        body{
+            background-color: #242424;
+            color: white
+        }
+h2{
+    color: orange;
+}
+    </style>
+</head>
+<body>
+     
+<h2 id="text"></h2>
+<script>
+        let grades = prompt("enter your score");
+        if ( grades>= 80) {
+            document.getElementById("text").innerText = "grade-A";
+        
+        } else if(grades>=70){
+            document.getElementById("text").innerText = "grade-B";
+        }else if(grades>=60) {
+            document.getElementById("text").innerText = "grade-c";
+        }else if(grades>=50) {
+            document.getElementById("text").innerText = "grade-D";
+        }
+        else if(grades<50) {
+            document.getElementById("text").innerText = "grade-E";
+        }
+        else{
+            document.getElementById("text").innerText = "you are fail";
+        }
+    
+</script>
+
+</body>
+</html>
