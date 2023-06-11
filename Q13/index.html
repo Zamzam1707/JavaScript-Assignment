@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prompt</title>
+    <style>
+        body{background-color: black;
+    
+        }
+        h2{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="agelimit"></h2>
+
+    <script>
+        
+            let value = prompt("Enter your age:")
+            if (value >= 18) {
+                document.getElementById("agelimit").innerText = 'You are old enough to drive';
+            } else {
+                document.getElementById("agelimit").innerText = `wait to complete your 18`;
+            }
+        
+    </script>
+</body>
+</html>
