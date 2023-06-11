@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="month" style= "text-align: center; width: 30%; height: 40px;"></h2>
+    <script>
+     let days = prompt("enter a month")
+     if ('January' == days || 'March' == days || 'May' == days || 'July' == days || 'August' == days || 'October' == days || 'December' == days) {
+       document.getElementById("month").innerText = "this month has 31 days";
+       document.getElementById("month").style.backgroundColor = "orange";
+     }
+      else if ('February' == days) {
+     document.getElementById("month").innerText = "this month has 28 days";
+     document.getElementById("month").style.backgroundColor = "skyblue";
+    } 
+     else if ('April' == days || 'June' == days || 'September' == days || 'November' == days) {
+     document.getElementById("month").innerText = "this month has 30 days"
+     document.getElementById("month").style.backgroundColor = "brown";
+    }
+     else{
+    document.getElementById("month").innerText = "enter valid month"
+    document.getElementById("month").style.backgroundColor = "red";
+    }
+    </script>
+</body>
+</html>
